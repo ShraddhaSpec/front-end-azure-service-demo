@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { getEmployees } from '../Service/api';
+// import { getEmployees } from '../Service/api';
+
+import axios from "axios";
 
 export const EmployeeComponent = () => {
   const [employees, setEmployees] = useState([]);
+  const API_URL = "https://localhost:7085/api/Employee"; // Adjust based on your .NET API URL
 
   useEffect(() => {
     const fetchEmployees = async () => {
@@ -11,6 +14,17 @@ export const EmployeeComponent = () => {
     };
     fetchEmployees();
   }, []);
+
+  const getEmployees = async () => {
+    try {
+      const response = await axios.get(API_URL);
+      return response.data;
+    } catch (error) {
+      console.error("Error fetching employees:", error);
+      return [];
+    }
+  };
+
   return (
     <div>
     <h2>Employee List</h2>
