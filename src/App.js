@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { EmployeeComponent } from "./Component/EmployeeComponent";
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <h1>Azure App Service</h1>
-     
+     <EmployeeComponent/>
     </div>
   );
 }
