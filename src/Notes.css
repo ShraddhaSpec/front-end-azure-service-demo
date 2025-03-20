@@ -1,0 +1,22 @@
+textarea {
+	border: none;
+	resize: none;
+	background-color: #c5dcff;
+}
+
+textarea:focus {
+	outline: none;
+    box-shadow: none;
+}
+
+.notes{
+	inline-size: 296px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+pre{
+	font-family: inherit;
+	margin: 7px;
+	text-wrap: wrap;
+}
