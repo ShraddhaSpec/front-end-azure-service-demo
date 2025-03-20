@@ -1,10 +1,7 @@
 
 import { EmployeeComponent } from "./Component/EmployeeComponent";
 
-
 function App() {
-
- 
 
   return (
     <div>
