@@ -36,5 +36,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "type": "module",
+  "jest": {
+    "transform": {},
+    "extensionsToTreatAsEsm": [".js", ".jsx", ".ts", ".tsx"],
+    "globals": {
+      "ts-jest": {
+        "useESM": true
+      }
+    },
+    "moduleNameMapper": {
+      "axios": "<rootDir>/node_modules/axios/index.js"
+    },
+    "transformIgnorePatterns": ["/node_modules/(?!(axios)/)"]
   }
 }

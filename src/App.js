@@ -1,5 +1,5 @@
 
-import { EmployeeComponent } from "./Component/EmployeeComponent";
+import { EmployeeComponent } from "./Component/EmployeeComponent.js";
 
 function App() {
 
