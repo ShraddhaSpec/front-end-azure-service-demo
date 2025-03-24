@@ -36,14 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "type": "module",
-  "jest": {
-    "moduleNameMapper": {
-      "^axios$": "<rootDir>/node_modules/axios/index.js"
-    },
-    "transformIgnorePatterns": [
-      "/node_modules/(?!(axios)/)"
-    ]
   }
 }
